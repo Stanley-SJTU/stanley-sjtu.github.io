@@ -15,26 +15,75 @@
 <body>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-container w3-margin-left" style="max-width:1500px">
-  <h2>Qu'est-ce que c'est la sophrologie ?</h2>
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card">
+	<a href="more.html" class="w3-bar-item w3-button">Qu'est-ce que c'est la SOPHROLOGIE ?</a>
+	<div class="w3-right w3-hide-small">
+      <a href="indexpage.html" class="w3-bar-item w3-button">ACCUEIL</a>
+      <a href="more.html" class="w3-bar-item w3-button">EN SAVOIR PLUS</a>
+      <a href="train.html" class="w3-bar-item w3-button">ENTRAINEMENT</a>
+	  <a href="resource.html" class="w3-bar-item w3-button">PAUSES RESSOURCES</a>
+	</div>
+  </div>
 </div>
 
-<div class="w3-bar w3-light-grey">
-  <a href="indexpage.html" class="w3-bar-item w3-button w3-hover-grey">ACCUEIL</a>
-  <a href="about.html" class="w3-bar-item w3-button w3-hover-blue">MISE EN OEUVRE DU DISPOSITIF</a>
-  <a href="more.html" class="w3-bar-item w3-button w3-hover-blue">SOPHROLOGIE EN SAVOIR PLUS</a>
-  <a href="train.html" class="w3-bar-item w3-button w3-hover-blue">ENTRAINEMENT</a>
-  <a href="resource.html" class="w3-bar-item w3-button w3-hover-blue">PAUSES RESSOURCES</a>
-</div> 
+<br>
 
 <div class="w3-display-container w3-center">
-  <img src="images/bra3.jpg" style="width:100%">
-  <div class="w3-display-topleft w3-container"><a href="quiz.html" class="w3-button w3-xxlarge"><p style="font-size:3vw;">QUIZZ</p></a></div>
-  <div class="w3-display-topright w3-container"><a href="enresume.html" class="w3-button w3-xxlarge"><p style="font-size:3vw;">EN RESUME</p></a></div>
+  <picture>
+    <source srcset="images/bra2_mobile.jpg" media="(max-width: 600px)">
+    <source srcset="images/bra3.jpg" media="(max-width: 1500px)">
+    <source srcset="images/bra3.jpg">
+    <img src="images/bra3.jpg" alt="Flowers" class="w3-image">
+  </picture> 
   <div class="w3-display-bottommiddle w3-container w3-text-white">
     <h1 class="w3-jumbo w3-hide-small">LA SOPHROLOGIE</h1>
   </div>
 </div>
+
+<br>
+
+<div class="w3-container w3-center" style="max-width:1500px">
+  
+  <a href="#jeu" class="w3-col l6 w3-button w3-hover-shadow"><img src="images/quiz.png" class="w3-image" style="width: 60px;">  QUIZ</a>
+  
+  <a href="#resume" class="w3-col l6 w3-button w3-hover-shadow"><img src="images/flower.png" class="w3-image" style="width: 72px;"> EN RESUME</a>
+</div>
+
+<br>
+
+<div id="jeu" class="w3-container" style="max-width:1500px">
+  <img src="images/jeu1.png">
+</div>
+
+<div class="w3-container" style="max-width:1500px">
+  <h2>Réponses</h2>
+</div>
+  
+<div class="w3-container" style="max-width:1500px">
+  <button onclick="myFunction()" class="w3-btn w3-black">Afficher les réponses</button>
+  <br>
+  <img id="response" class="w3-hide" src="images/jeu2.png">
+</div>
+
+<br>
+<br>
+
+<div id="resume" class="w3-container" style="max-width:1500px">
+  <img src="images/stimres.png" class="w3-col l6">
+</div>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("response");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+</script>
 
 </body>
 
