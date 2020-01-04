@@ -4,58 +4,250 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Dosis|Open+Sans&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-	body,h1,h2 {font-family: "Raleway", Arial, sans-serif}
-	h1 {letter-spacing: 6px}
+	h2, h3 {font-family: 'Dosis', sans-serif;}
+  h1 {font-family: 'Roboto', sans-serif;}
+  p {font-family: 'Open Sans', sans-serif;}
 	.w3-row-padding img {margin-bottom: 12px}
-	body {
-			background-image: url("images/bra2.jpg");
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
-	h2.relative {
-		  position: relative;
-		  left: 30px;
-		}
-	p.center {
-		  position: fixed;
-		  bottom: 25px;
-		  left: 400px;
-		  width: 1200px;
-		}
+  p.big {
+    line-height: 1.9
+  }
+  .center {
+  margin: auto;
+  width: 100%;
+}
 </style>
 
 <body>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-container w3-margin-left" style="max-width:1500px">
-  <h2 class="relative">Qu'est-ce que c'est la sophrologie ?</h2>
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card">
+	<a href="more.html" class="w3-bar-item w3-button w3-round-xxlarge">Qu'est-ce que c'est la SOPHROLOGIE ?</a>
+	<div class="w3-right w3-hide-small">
+      <a href="indexpage.html" class="w3-bar-item w3-button w3-round-xxlarge">ACCUEIL</a>
+      <a href="more.html" class="w3-bar-item w3-button w3-round-xxlarge">EN SAVOIR PLUS</a>
+      <a href="train.html" class="w3-bar-item w3-button w3-round-xxlarge">ENTRAINEMENT</a>
+	    <a href="resource.html" class="w3-bar-item w3-button w3-round-xxlarge">PAUSES RESSOURCES</a>
+	</div>
+  </div>
 </div>
 
-<div class="w3-bar">
-  <a href="indexpage.html" class="w3-bar-item w3-button w3-hover-grey">ACCUEIL</a>
-  <a href="about.html" class="w3-bar-item w3-button w3-hover-blue">MISE EN OEUVRE DU DISPOSITIF</a>
-  <a href="more.html" class="w3-bar-item w3-button w3-hover-blue">SOPHROLOGIE EN SAVOIR PLUS</a>
-  <a href="train.html" class="w3-bar-item w3-button w3-hover-blue">ENTRAINEMENT</a>
-  <a href="resource.html" class="w3-bar-item w3-button w3-hover-blue">PAUSES RESSOURCES</a>
-</div> 
+<br>
+
+<div class="w3-display-container center">
+  <img src="images/bra3.jpg" style="width:100%">
+  <div class="w3-display-left w3-container w3-text-white w3-margin-top w3-margin-left style="max-width:1000px">
+    <h1 class="w3-jumbo w3-hide-small"><b>LA SOPHROLOGIE</b></h1>
+    <div class="w3-bar">
+      <button class="w3-button w3-black w3-round-xxlarge" style="width:30%"><a href="#jeu">QUIZZ</a></button>
+      <button class="w3-button w3-black w3-round-xxlarge" style="width:30%"><a href="#resume">EN RESUME</a></button>
+    </div>
+  </div>
+</div>
 
 <br>
 
+<div class="w3-container w3-center" style="max-width:1500px">
+  
+</div>
+
 <br>
 
-<div class="w3-row">
-  <div class="w3-col m6 w3-center"><a href="quiz.html" class="w3-button" style="font-size:30px">QUIZZ</a></div>
-  <div class="w3-col m6 w3-center"><a href="enresume.html" class="w3-button" style="font-size:30px">EN RESUME</a></div>
-</div> 
+<div id="jeu" class="w3-container" style="max-width:1600px">
+  <br>
+  <br>
+  <div class="w3-container w3-padding-32 center" style="max-width:1000px;width:100%">
+    <h2>A VOUS DE JOUER !</h2>
+    <br>
+    <h3>1. La sophrologie a vu le jour dans les années :</h3>
+    <br>
+    <div class="w3-bar">
+      <button class="w3-button w3-black w3-round-xxlarge" onclick="wrongAnswer1()" style="width:15%">50</button>
+      <button class="w3-button w3-black w3-round-xxlarge" onclick="correctAnswer1()" style="width:15%">60</button>
+      <button class="w3-button w3-black w3-round-xxlarge" onclick="wrongAnswer1()" style="width:15%">70</button>
+      <button class="w3-button w3-black w3-round-xxlarge" onclick="wrongAnswer1()" style="width:15%">80</button>
+      <button class="w3-button w3-black w3-round-xxlarge" onclick="wrongAnswer1()" style="width:15%">90</button>
+    </div>
+    <p id="wrongText1" class="w3-container w3-hide">Mauvaise réponse !</p>
+    <p id="correctText1" class="w3-container w3-hide">En 1960. C’est le Professeur Alfonso CAYCEDO, neuropsychiatre, 
+      qui a mis au point cette méthode en s’inspirant de diverses pratiques et techniques ocidentales et orientales.</p>
+    <br>
+    <h3>2. La sophrologie est une méthode de relaxation :</h3>
+    <br>
+    <div class="w3-bar">
+      <button class="w3-button w3-black w3-round-xxlarge" onclick="correctAnswer2()" style="width:10%">OUI</button>
+      <button class="w3-button w3-black w3-round-xxlarge" onclick="correctAnswer2()" style="width:10%">NON</button>
+    </div>
+    <p id="correctText2" class="w3-container w3-hide">OUI et NON ! Certes elle procure détente, bien-être et relâchement 
+      mais apporte bien plus que cela ! Etymologiquement, ce mot signifie  « Etude de la conscience harmonieuse ». 
+      « SOS »représentant l’harmonie et l’équilibre, « PHREN »l’esprit et la conscience, et « LOGOS »l’étude. 
+      C’est-à-dire la prise de conscience de notre corps, de nos sensations, de nos émotions, de nos ressources et de nos pensées, 
+      pour mieux s’en libérer ou au contraire mieux les stimuler. Un entraînement du corps et de l’esprit associant techniques 
+      de relaxation et développement personnel, pour nous aider à mieux nous adapter aux différentes situations et événements 
+      de notre vie, à vivre notre quotidien avec plus de confiance et de sérénité.
+    </p>
+    <br>
+    <h3>3. Quels sont ses outils ?</h3>
+    <br>
+    <div class="w3-bar">
+      <button class="w3-button w3-black w3-round-xxlarge" onclick="correctAnswer3()" style="width:20%">La respiration</button>
+      <button class="w3-button w3-black w3-round-xxlarge" onclick="correctAnswer3()" style="width:20%">La visualisation</button>
+      <button class="w3-button w3-black w3-round-xxlarge" onclick="wrongAnswer3()" style="width:20%">Le massage</button>
+    </div>
+    <p id="wrongText3" class="w3-container w3-hide">Mauvaise réponse !</p>
+    <p id="correctText3" class="w3-container w3-hide">
+      La RESPIRATION et la VISUALISATION + DETENTE MUSCULAIRE
+    </p>
+    <br>
+    <h3>4. La sophrologie réveille en nous :</h3>
+    <br>
+    <div class="w3-bar">
+      <button class="w3-button w3-black w3-round-xxlarge" onclick="correctAnswer4()" style="width:20%">Le positif</button>
+      <button class="w3-button w3-black w3-round-xxlarge" onclick="wrongAnswer4()" style="width:20%">Le négatif</button>
+      <button class="w3-button w3-black w3-round-xxlarge" onclick="correctAnswer4()" style="width:20%">Nos ressources</button>
+    </div>
+    <p id="wrongText4" class="w3-container w3-hide">Mauvaise réponse !</p>
+    <p id="correctText4" class="w3-container w3-hide">
+      Le POSITIF en nous et dynamise nos RESSOURCES. Si nous sommes capables de créer du négatif, 
+      nous sommes forcément capables de créer du positif ! C’est en quelque sorte une réaction en chaîne, 
+      un effet boule de neige. Plus je laisse entrer le positif dans ma vie et plus je dynamise mes ressources 
+      pour m’ouvrir à de belles choses.
+    </p>
+    <br>
+    <h3>5. Cette méthode est pratiquée dans les domaines :</h3>
+    <div class="w3-bar">
+      <button class="w3-button w3-black w3-round-xxlarge" onclick="correctAnswer5()" style="width:20%">Du sport</button>
+      <button class="w3-button w3-black w3-round-xxlarge" onclick="correctAnswer5()" style="width:20%">De l’entreprise</button>
+      <button class="w3-button w3-black w3-round-xxlarge" onclick="wrongAnswer5()" style="width:20%">De la santé</button>
+      <button class="w3-button w3-black w3-round-xxlarge" onclick="wrongAnswer5()" style="width:20%">Scolaire</button>
+    </div>
+    <p id="wrongText5" class="w3-container w3-hide">Mauvaise réponse !</p>
+    <p id="correctText5" class="w3-container w3-hide">
+      La sophrologie a trouvé depuis longtemps sa place. 
+      Dans le monde du sport (ressourcement, préparation mentale, travail du geste sûr, concentration, dynamisation, performance…) 
+      mais aussi dans le secteur de l’entreprise (prévention des risques psychosociaux, bien-être au travail, 
+      gestion du stress, préparation d’objectifs, cohésion, prévention du burnout…) 
+      Elle est aussi de plus en plus présente dans le secteur médical (gestion de la douleur, aide à la guérison, aide aux aidants…) 
+    </p>
+  </div>
+</div>
 
+<br>
+<br>
+<br>
 
-<p class="center" style="font-size:90px; color:white">LA SOPHROLOGIE</p>
+<div id="resume" class="w3-container center" style="max-width:1000px;width:100%">
+  <br>
+  <br>
+  <img src="images/stimres.png">
+</div>
 
+<script>
+    function wrongAnswer1() {
+      var x = document.getElementById("wrongText1");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      }
 
+      var y = document.getElementById("correctText1");
+        y.className = y.className.replace(" w3-show", "");
+    }
 
+    function wrongAnswer3() {
+      var x = document.getElementById("wrongText3");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      }
+
+      var y = document.getElementById("correctText3");
+        y.className = y.className.replace(" w3-show", "");
+    }
+
+    function wrongAnswer4() {
+      var x = document.getElementById("wrongText4");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      }
+
+      var y = document.getElementById("correctText4");
+        y.className = y.className.replace(" w3-show", "");
+    }
+
+    function wrongAnswer5() {
+      var x = document.getElementById("wrongText5");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      }
+
+      var y = document.getElementById("correctText5");
+        y.className = y.className.replace(" w3-show", "");
+    }
+
+    function correctAnswer1() {
+      var x = document.getElementById("correctText1");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+
+      var y = document.getElementById("wrongText1");
+        y.className = y.className.replace(" w3-show", "");
+    }
+
+    function correctAnswer2() {
+      var x = document.getElementById("correctText2");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      }
+    }
+
+    function correctAnswer3() {
+      var x = document.getElementById("correctText3");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      }
+
+      var y = document.getElementById("wrongText3");
+        y.className = y.className.replace(" w3-show", "");
+    }
+
+    function correctAnswer4() {
+      var x = document.getElementById("correctText4");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      }
+
+      var y = document.getElementById("wrongText4");
+        y.className = y.className.replace(" w3-show", "");
+    }
+
+    function correctAnswer5() {
+      var x = document.getElementById("correctText5");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      }
+
+      var y = document.getElementById("wrongText5");
+        y.className = y.className.replace(" w3-show", "");
+    }
+</script>
 
 </body>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-large"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <a href="https://www.instagram.com/stanley_2141/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Powered by TangMiTang</p>
+</footer>
+
 </html>
