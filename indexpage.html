@@ -17,7 +17,11 @@
   .center {
   margin: auto;
   width: 100%;
-}
+  }
+  hr.strong {
+  border: 5px solid rgb(121, 121, 121);
+  }
+
 </style>
 
 <body>
@@ -28,12 +32,24 @@
 	<div class="w3-right w3-hide-small">
       <a href="more.html" class="w3-bar-item w3-button w3-round-xxlarge">EN SAVOIR PLUS</a>
       <a href="train.html" class="w3-bar-item w3-button w3-round-xxlarge">ENTRAINEMENT</a>
-	  <a href="resource.html" class="w3-bar-item w3-button w3-round-xxlarge">PAUSES RESSOURCES</a>
-	</div>
+	    <a href="resource.html" class="w3-bar-item w3-button w3-round-xxlarge">PAUSES RESSOURCES</a>
+  </div>
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-right w3-hide-large" style="display:none;right:0;" id="rightMenu">
+    <button onclick="closeRightMenu()" class="w3-bar-item w3-button"><p>Fermer &times;</p></button>
+    <a href="more.html" class="w3-bar-item w3-button"><p>EN SAVOIR PLUS</p></a>
+    <a href="train.html" class="w3-bar-item w3-button"><p>ENTRAINEMENT</p></a>
+    <a href="resource.html" class="w3-bar-item w3-button"><p>PAUSES RESSOURCES</p></a>
+  </div>
+  <button class="w3-button w3-right w3-hide-large" onclick="openRightMenu()">&#9776;</button>
+
   </div>
 </div>  
 
-  
+<div class="w3-bottom w3-center w3-padding-16 w3-hide-large">
+	<a href="train.html" class="w3-button w3-teal w3-round-xxlarge" style="max-width:300px;width:100%">S'ENTRAINER MAINTENANT !</a>
+
+</div>  
+
 <div class="w3-display-container">
   <img src="images/DSCN1329_1.jpg" style="width:100%">
   <div class="w3-display-bottommiddle w3-container w3-center w3-text-white">
@@ -47,7 +63,8 @@
 
 <div class="w3-container" style="max-width:1600px">
 
-  <div class="w3-container w3-padding-32 center" style="max-width:1000px;width:100%">
+  <div class="w3-container w3-padding-16 center" style="max-width:1000px;width:100%">
+    <hr class="hr.strong">
       <h2><b>OBJECTIFS DU DISPOSITIF</b></h2>
       <br>
       <p class="w3-large">Accompagner concrètement sur le terrain les personnels de l'Education Nationale 
@@ -56,7 +73,8 @@
          Permettre à chacun de pouvoir se ressourcer sur son lieu de travail.</p>
   </div>
 
-  <div class="w3-container w3-padding-32 center" style="max-width:1000px">
+  <div class="w3-container w3-padding-16 center" style="max-width:1000px">
+    <hr class="hr.strong">
     <h2><b>LES ANIMATRICES de Stim' Ressources</b></h2>
     <br>
     <p class="w3-large">En 2018, participation au concours IMPULSIONS sur l’académie de Lyon. 
@@ -92,12 +110,14 @@
 
   <br>
 
-  <div class="w3-container w3-padding-32 center" style="max-width:1000px">
+  <div class="w3-container w3-padding-16 center" style="max-width:1000px">
+    <hr class="hr.strong">
     <h2><b>PERSONNELS CONCERNES</b></h2>
     <p class="w3-large">Enseignants 1er et 2ème degrés / personnels administratifs / personnels AESH</p>
   </div>
 
-  <div class="w3-container w3-padding-32 center" style="max-width:1000px">
+  <div class="w3-container w3-padding-16 center" style="max-width:1000px">
+    <hr class="hr.strong">
     <h2><b>LES SESSIONS</b></h2>
     <p class="w3-large">Salle polyvalente du COLLEGE JULES VALLES à 17h, limitée à 20 places</p>
     <br>
@@ -143,7 +163,8 @@
   </div>
 
 
-  <div class="w3-container w3-padding-32 center" style="max-width:1000px">
+  <div class="w3-container w3-padding-16 center" style="max-width:1000px">
+    <hr class="hr.strong">
     <h2><b>SOUTIENS ET FINANCEMENTS</b></h2>
     <br>
     <img src="images/mgen.png">
@@ -151,12 +172,23 @@
     <img src="images/alyon.png">
     <br>
     <br>
+    <hr class="hr.strong">
     <h2><b>PARTENAIRE</b></h2>
     <br>
     <img src="images/emse_logo.png">
   </div>
 
 </div>
+
+<script>  
+  function openRightMenu() {
+    document.getElementById("rightMenu").style.display = "block";
+  }
+  
+  function closeRightMenu() {
+    document.getElementById("rightMenu").style.display = "none";
+  }
+</script>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-large"> 
